@@ -1,0 +1,23 @@
+.cart-icon{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    left: 10px;
+    top: 25vh;
+    padding: 5px;
+    border: none;
+    z-index: 10;
+    cursor: pointer;
+}
+.cart-icon span{
+    font-size: 24px;
+}
+.cart-icon p{
+    position: absolute;
+    top: -30%;
+    font-size: 24px;
+    right: 10%;
+}

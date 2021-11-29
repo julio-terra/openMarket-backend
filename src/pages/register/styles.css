@@ -1,0 +1,10 @@
+.register-box{
+    padding: 50px;
+    border-radius: 5px;
+}
+.register-box small{
+    font-weight: bold;
+}
+.login{
+    font-size: 13px;
+}

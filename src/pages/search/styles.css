@@ -1,0 +1,7 @@
+.search-container{
+    padding-top: 70px;
+    min-height: 100vh;
+}
+.search-container input::placeholder{
+   color: rgb(var(--secondary));
+}

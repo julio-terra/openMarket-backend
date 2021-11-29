@@ -1,0 +1,46 @@
+.null{
+    display: none;
+}
+.sidebar{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(var(--dark));
+    position: fixed;
+    top: 0;
+    z-index: 1500;
+    animation: animation 2s 0s reverse both;
+}
+@keyframes open-animation{
+    0%{
+        left: 100vw;
+    }
+    100%{
+        left: 0vw;
+    }
+}
+@keyframes close-animation{
+    from{
+        left: 0vw;
+    }
+    to{
+        left: 100vw;
+    }
+}
+.opened{
+    animation: open-animation 0.5s 0s both;
+}
+.closed{
+    animation: close-animation 0.5s 0s both;
+}
+.sidebar span.mdi{
+    font-size: 1.8rem;
+}
+.sidebarnav {
+    margin-top: 80px;
+}
+.sidebarnav li{
+    margin-top: 1rem;
+}
+.sidebarnav a{
+    font-size: 2.5rem;
+}

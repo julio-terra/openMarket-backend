@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root {
+  --primary: 13, 14, 17;
+  --secondary: 245, 79, 0;
+  --dark: 24, 25, 29;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: 'roboto', sans-serif;
+  letter-spacing: -0.03em;
+}
+
+input[type='text'],
+input[type='search'],
+input[type='email'],
+input[type='password'],
+input[type='date'] {
+  font-size: 15px;
+}
+
+input[type='text'],
+input[type='search'],
+input[type='email'],
+input[type='password'],
+input[type='date'],
+input[type='text']:focus,
+input[type='search']:focus,
+input[type='email']:focus,
+input[type='password']:focus,
+input[type='date']:focus,
+input[type='text']:disabled,
+input[type='search']:focus,
+input[type='email']:disabled,
+input[type='password']:disabled,
+input[type='date']:disabled {
+  background-color: rgb(var(--primary));
+  border: none;
+  outline: none;
+  color: white;
+}
+
+.btn {
+  font-size: 15px;
+}
+
+.btn-secondary.rounded-circle {
+  padding: 6px 14px;
+}
+
+.bg-primary {
+  background-color: rgb(var(--primary)) !important;
+}
+
+.bg-secondary {
+  background-color: rgb(var(--secondary)) !important;
+}
+.bg-dark{
+  background-color: rbg(var(--dark));
+}
+.text-primary{
+  color: rgb(var(--primary))!important;
+}
+.text-secondary{
+  color: rgb(var(--secondary))!important;
+}
+.text-dark{
+  color: rgb(var(--secondary))!important;
+}
+.btn-primary,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary:disabled,
+.btn-primary:hover {
+  background-color: rgb(var(--primary)) !important;
+  border-color: rgb(var(--primary));
+}
+.btn-outline-primary,
+.btn-outline-primary:focus,
+.btn-outline-primary:active,
+.btn-outline-primary:disabled,
+.btn-outline-primary:hover {
+  border-color: rgb(var(--primary));
+  color: rgb(var(--primary));
+}
+.btn-secondary,
+.btn-secondary:focus,
+.btn-secondary:active,
+.btn-secondary:disabled,
+.btn-secondary:hover {
+  background-color: rgb(var(--secondary)) !important;
+  border-color: rgb(var(--secondary));
+}
+.btn-outline-secondary,
+.btn-outline-secondary:focus,
+.btn-outline-secondary:active,
+.btn-outline-secondary:disabled,
+.btn-outline-secondary:hover {
+  border-color: rgb(var(--secondary));
+  color: rgb(var(--secondary));
+}
+.bg-primary {
+  background-color: rgb(var(--primary)) !important;
+}
+.badge{
+  font-weight: 500;
+}
+.badge.badge-primary {
+  background: rgba(var(--primary), 0.1);
+  color: rgb(var(--primary));
+}
+
+.badge.badge-secondary {
+  background: rgba(var(--secondary), 0.1);
+  color: rgb(var(--secondary));
+}
+
+.box {
+  background: #fff;
+  box-shadow: 0px 0px 11px 6px rgba(0, 0, 0, 0.08);
+  border-radius: 5px;
+  display: inline-block;
+  padding: 50px;
+}
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
+a{
+  text-decoration: none;
+}
+li{
+  list-style-type: none;
+}
