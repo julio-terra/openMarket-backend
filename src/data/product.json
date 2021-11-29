@@ -1,0 +1,189 @@
+[
+    {
+      "name": "PEDIGREE®",
+      "email":"pedigree@gmail.com",
+      "password": "pedigree123",
+      "photo": "https://1000logos.net/wp-content/uploads/2020/09/Pedigree-Logo.jpg",
+      "balance": 0,
+      "products": [
+        {
+          "name": "PEDIGREE® PUPPIES MEDIUM AND LARGE BREED 1KG",
+          "photo": "https://i.imgur.com/06bVol3.png",
+          "price": 39,
+          "category": "portion"
+        },
+        {
+          "name": "PEDIGREE® Natural Balance Adult 7+",
+          "photo": "https://i.imgur.com/kIvS3C3.png",
+          "price": 39,
+          "category": "portion"
+        },
+        {
+          "name": "PEDIGREE® ADULT BEEF, CHICKEN & CEREALS",
+          "photo": "https://i.imgur.com/dv6yfGh.png",
+          "price": 39,
+          "category": "portion"
+        },
+        {
+          "name": "PEDIGREE® PUPPIES SMALL BREED",
+          "photo": "https://i.imgur.com/NUHWa7o.png",
+          "price": 49,
+          "category": "portion"
+        },
+        {
+          "name": "PEDIGREE® Adult Sachet Small Breeds Chicken Flavor with Sauce",
+          "photo": "https://i.imgur.com/pS58gXD.png",
+          "price": 49,
+          "category": "portion"
+        },
+        {
+          "name": "PEDIGREE® Chicken Flavored Can with Sauc",
+          "photo": "https://i.imgur.com/E7moJoP.png",
+          "price": 44,
+          "category": "portion"
+        },
+        {
+          "name": "PEDIGREE® BISCROK® Adult Small Breeds",
+          "photo": "https://i.imgur.com/XSZIjZe.png",
+          "price": 44,
+          "category": "portion"
+        },
+        {
+          "name": "PEDIGREE® MARROBONE",
+          "photo": "https://i.imgur.com/WB3jHTV.png",
+          "price": 29,
+          "category": "portion"
+        },
+        {
+          "name": "PEDIGREE® DENTASTIX® Small Breeds",
+          "photo": "https://i.imgur.com/BfmXcDM.png",
+          "price": 29,
+          "category": "portion"
+        },
+        {
+          "name": "PEDIGREE® RODEO® Chicken Flavor",
+          "photo": "https://i.imgur.com/0GLXKzz.png",
+          "price": 34,
+          "category": "portion"
+        }
+      ]
+    },
+    {
+      "name": "nike",
+      "email":"nike@gmail.com",
+      "password": "nike123",
+      "photo": "https://thumbs.dreamstime.com/b/fundo-preto-vetor-do-logotipo-nike-da-marca-para-uso-impresso-de-vestu%C3%A1rio-desportivo-e-gin%C3%A1stica-183282388.jpg",
+      "balance": 0,
+      "products": [
+        {
+          "name": "Men's Nike Air Zoom Pegasus 38 Shoes",
+          "photo": "https://images.lojanike.com.br/1024x1024/produto/tenis-nike-air-zoom-pegasus-38-masculino-CW7356-002-1.jpg",
+          "price": 139,
+          "category": "fashion"
+        },
+        {
+          "name": "Men's Nike Air Max 90 EOI Shoes",
+          "photo": "https://images.lojanike.com.br/1024x1024/produto/tenis-nike-air-max-90-eoi-masculino-DA5562-001-1.jpg",
+          "price": 139,
+          "category": "fashion"
+        },
+        {
+          "name": "Nike Air Zoom Tennis Men's Next%",
+          "photo": "https://images.lojanike.com.br/1024x1024/produto/tenis-nike-air-zoom-tempo-next-masculino-CI9923-100-3.jpg",
+          "price": 139,
+          "category": "fashion"
+        },
+        {
+          "name": "Nike SB Force 58 Unisex Shoes",
+          "photo": "https://images.lojanike.com.br/1024x1024/produto/tenis-nike-sb-force-58-CZ2959-001-3-31625765859.jpg",
+          "price": 249,
+          "category": "fashion"
+        },
+        {
+          "name": "Men's Nike Air VaporMax Evo Shoes",
+          "photo": "https://images.lojanike.com.br/1024x1024/produto/tenis-nike-air-vapormax-evo-masculino-CT2868-001-1.jpg",
+          "price": 149,
+          "category": "fashion"
+        },
+        {
+          "name": "Nike Air VaporMax Evo Men's Shoes",
+          "photo": "https://images.lojanike.com.br/1024x1024/produto/tenis-nike-air-vapormax-2020-fk-masculino-CJ6740-001-1.jpg",
+          "price": 244,
+          "category": "fashion"
+        },
+        {
+          "name": "Men's Nike Air VaporMax 2020 Flyknit Shoes",
+          "photo": "https://images.lojanike.com.br/1024x1024/produto/tenis-nike-air-vapormax-2020-flyknit-masculino-CT1823-400-5.jpg",
+          "price": 244,
+          "category": "fashion"
+        },
+        {
+          "name": "Men's NIKE DUNK HI EMB SHOES",
+          "photo": "https://artwalk.vteximg.com.br/arquivos/ids/234074-1000-1000/Tenis-Nike-Dunk-Hi-Emb-Masculino-Multicolor.jpg?v=637571108143000000",
+          "price": 229,
+          "category": "fashion"
+        },
+        {
+          "name": "Nike Air Zoom Tennis Men's Next%",
+          "photo": "https://images.lojanike.com.br/1024x1024/produto/tenis-nike-air-zoom-tempo-next-masculino-CI9923-100-3.jpg",
+          "price": 229,
+          "category": "fashion"
+        }
+      ]
+    },
+    {
+      "name": "apple",
+      "email":"apple@gmail.com",
+      "password": "apple123",
+      "photo": "https://marcas-logos.net/wp-content/uploads/2020/01/Apple-logo-1.jpg",
+      "balance": 0,
+      "products": [
+        {
+          "name": "iPhone 12 Pro Max Apple 128 GB - Pacific Blue 6.7 ”Cam. Triple 12MP iOS",
+          "photo": "https://a-static.mlcdn.com.br/618x463/iphone-12-pro-max-apple-128gb-azul-pacifico-67-cam-tripla-12mp-ios/magazineluiza/155596200/a69733d827ba8cfd5e3ba7bb572765c1.jpg",
+          "price": 799,
+          "category": "technology"
+        },
+        {
+          "name": "Macbook Apple Air A2337 M1 13.3 8 GB SSD 256 GB Mac OS Retina Display",
+          "photo": "https://i.zst.com.br/thumbs/12/28/34/1369411026.jpg",
+          "price": 699,
+          "category": "technology"
+        }
+      ]
+    },
+    {
+      "name": "samsung",
+      "email":"samsung@gmail.com",
+      "password": "samsung123",
+      "photo": "https://logospng.org/download/samsung/logo-samsung-1536.png",
+      "balance": 0,
+      "products": [
+        {
+          "name": "Smartphone Samsung A20, (ZF), Android 9.0, Dual Chip, Dual Rear Camera 13MP",
+          "photo": "https://fujiokadistribuidor.vteximg.com.br/arquivos/ids/156805",
+          "price": 799,
+          "category": "technology"
+        },
+        {
+          "name": "Smartphone Samsung Galaxy A10 32GB 2GB RAM 13MP+5MP 4G Blue",
+          "photo": "https://farmaciaindiana.vteximg.com.br/arquivos/ids/215117/7892509107525_1.jpg?v=636924831449970000",
+          "price": 699,
+          "category": "technology"
+        },
+        {
+          "name": "Smartphone Samsung A20, (ZF), Android 9.0, Dual Chip, Dual Rear Camera 13MP",
+          "photo": "https://fujiokadistribuidor.vteximg.com.br/arquivos/ids/156805",
+          "price": 799,
+          "category": "technology"
+        },
+        {
+          "name": "Smartphone Samsung Galaxy S10 SM-G973 128GB 8GB 6,1 4G",
+          "photo": "https://mservice.vteximg.com.br/arquivos/ids/350762-1000-1000/1-Smartphone-Samsung.jpg?v=637398842328070000",
+          "price": 599,
+          "category": "technology"
+        }
+      ]
+    }
+  ]
+  
