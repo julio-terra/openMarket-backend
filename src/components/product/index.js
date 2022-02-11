@@ -25,7 +25,6 @@ const Product = ({_id, photo, name, price}) =>{
       <div>
         <button
           className="btn btn-secondary"
-          onClick={add}
         >
           add to cart
         </button>
