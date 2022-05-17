@@ -9,7 +9,8 @@ const product = new  Schema({
     name: String,
     photo: String,
     price: Number,
-    category: String
+    category: String,
+    tags: [String]
 });
 
 module.exports = mongoose.model('Product', product);
