@@ -1,5 +1,10 @@
 const Product = require('../models/product');
 
+const multer = require('multer');
+
+const UploadImagesService = require('../services/uploadImagesService');
+const DeleteImagesService = require('../services/deleteImagesService');
+
 const getProducts = async(req, res) =>{
     try{
         const products = await Product.find()
@@ -33,9 +38,13 @@ const getProduct = async(req, res) =>{
 };
 const postProduct = async(req, res) =>{
     try{
+        const { file } = req;
+        const uploadImagesService = new UploadImagesService();
+        await uploadImagesService.execute(file);
+
         const product = new Product(req.body);
-        await product.save();
-        res.json(product);
+        await product.save()
+        res.json({product});
     }
     catch(err){
         res.json({error: true, message: err})
