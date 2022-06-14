@@ -1,53 +1,70 @@
 const Product = require('../models/product');
 
-const multer = require('multer');
-
 const UploadImagesService = require('../services/uploadImagesService');
 const DeleteImagesService = require('../services/deleteImagesService');
 
-const getProducts = async(req, res) =>{
+const getProducts = async(request, response) =>{
     try{
         const products = await Product.find()
-        res.json({ products });
+        response.json({ products });
     }
     catch(err){
-        res.json({error: true, message: err})
+        response.json({error: true, message: err})
     };
 };
-const productsSearch = async(req, res) =>{
+const productsSearch = async(request, response) =>{
     try{
-        const page = req.query.page ? Number(req.query.page) : 0;
-        const itensPerPage = req.query.itensPerPage ? Number(req.query.itensPerPage) : 0;
+        const page = request.query.page ? Number(request.query.page) : 0;
+        const itensPerPage = request.query.itensPerPage ? Number(request.query.itensPerPage) : 0;
         const limit = itensPerPage;
         const offset = page * itensPerPage;
-        const products = await Product.find({tags: {$in: req.body.tags}}).skip(offset).limit(limit)
-        res.json({ products });
+        const totalCount = await Product.find({tags: {$in: request.body.tags}})
+        const products = await Product.find({tags: {$in: request.body.tags}}).skip(offset).limit(limit)
+        response.json({ products, totalCount});
     }
     catch(err){
-        res.json({error: true, message: err})
+        response.json({error: true, message: err})
     };
 };
-const getProduct = async(req, res) =>{
+const getProduct = async(request, response) =>{
     try{
-        const product = await Product.findById(req.params.id);
-        res.json({ product });
+        const product = await Product.findById(request.params.id);
+        response.json({ product });
     }
     catch(err){
-        res.json({error: true, message: err})
+        response.json({error: true, message: err})
     };
 };
-const postProduct = async(req, res) =>{
+const getProductsByUser = async(request, response) =>{
     try{
-        const { file } = req;
+        const products = await Product.find({user_id: request.params.user});
+        response.json({ products });
+    }
+    catch(err){
+        response.json({error: true, message: err})
+    };
+};
+const postProduct = async(request, response) =>{
+    try{
+        const { originalname: fileName, fileSize, filename, location: fileUrl = "" } = request.file;
+ 
         const uploadImagesService = new UploadImagesService();
-        await uploadImagesService.execute(file);
-
-        const product = new Product(req.body);
+        await uploadImagesService.execute(request.file);
+        
+        
+        const product = new Product({
+            ...request.body,
+            tags: JSON.parse(request.body.tags),
+            fileName,
+            fileSize,
+            key: filename,
+            fileUrl
+        });
         await product.save()
-        res.json({product});
+        response.json({product});
     }
     catch(err){
-        res.json({error: true, message: err})
+        response.json({error: true, message: err})
     };
 };
 
@@ -56,5 +73,6 @@ module.exports = {
     getProducts,
     productsSearch,
     getProduct,
+    getProductsByUser,
     postProduct
 }

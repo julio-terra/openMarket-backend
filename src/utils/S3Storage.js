@@ -26,7 +26,7 @@ class S3Storage {
 
     this.client
       .putObject({
-        Bucket: 'openmarketjulio',
+        Bucket: process.env.AWS_BUCKET,
         Key: filename,
         ACL: 'public-read',
         Body: fileContent,
@@ -40,7 +40,7 @@ class S3Storage {
   async deleteFile(filename){
     await this.client
       .deleteObject({
-        Bucket: 'openmarketjulio',
+        Bucket: process.env.AWS_BUCKET,
         Key: filename,
       })
       .promise();

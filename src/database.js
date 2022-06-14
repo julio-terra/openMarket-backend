@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const URI = 'mongodb://localhost/openmarket';
+const URI = `mongodb+srv://${process.env.MONGODB_USER}:${process.env.MONGODB_PASSWORD}@cluster0.rqaja.mongodb.net/?retryWrites=true&w=majority`;
 
 mongoose.set('debug', true);
 

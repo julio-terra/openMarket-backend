@@ -2,46 +2,46 @@ const User = require('../models/User');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 
-const register = async (req, res) =>{
+const register = async (request, response) =>{
     try{
-        const user = await User.findOne({email: req.body.email});
+        const user = await User.findOne({email: request.body.email});
         if(user){
-            res.json({error: true, message: 'this user already exists'});
+            response.json({error: true, message: 'this user already exists'});
         }else{
-            const newUser = new User(req.body);
+            const newUser = new User(request.body);
             await newUser.save();
-            res.json({ user: newUser });
+            response.json({ user: newUser });
         }
     }
     catch(err){
-        res.json({error: true, message: err});
+        response.json({error: true, message: err});
     };
 };
-const login = async (req, res) => {
-    const user = await User.findOne({ email: req.body.email });
+const login = async (request, response) => {
+    const user = await User.findOne({ email: request.body.email });
     if (user) {
-      const validPassword = await bcrypt.compare(req.body.password, user.password);
+      const validPassword = await bcrypt.compare(request.body.password, user.password);
       if(validPassword){
         const accessToken = jwt.sign({ user_id: user.id },
         "mysecret",
         {expiresIn: '24h'}
         );
-        res.json({ user, accessToken })
+        response.json({ user, accessToken })
       }
       else{
-        res.json({error: true, message: "invalid email or password"})
+        response.json({error: true, message: "invalid email or password"})
       }
     }else{
-        res.json({error: true, message: "invalid email or password"})
+        response.json({error: true, message: "invalid email or password"})
     }
 };
-const getUser =  async(req, res) =>{
+const getUser =  async(request, response) =>{
     try{
-        const user = await User.findById(req.params.id);
-        res.json({ user });
+        const user = await User.findById(request.params.id);
+        response.json({ user });
     }
     catch(err){
-        res.json({error: true, message: err})
+        response.json({error: true, message: err})
     };
 };
 
