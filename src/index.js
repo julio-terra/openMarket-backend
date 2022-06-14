@@ -7,7 +7,8 @@ require('dotenv/config');
 
 require('./database');
 
-app.set('port', process.env.PORT || 8000)
+const PORT = process.env.PORT || 8000;
+
 app.use(cors());
 app.use(morgan('dev'))
 app.use(express.json());
@@ -15,6 +16,6 @@ app.use(express.json());
 app.use('/', require('./routes/product.routes'))
 app.use('/user', require('./routes/user.routes'))
 
-app.listen(app.get('port'), () =>{
+app.listen(PORT, () =>{
     console.log('Server is up')
 });
